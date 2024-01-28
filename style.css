@@ -1,0 +1,367 @@
+@font-face {
+  font-family: NB;
+  src: url("Font/NBInternationalProBoo.woff2");
+}
+@font-face {
+  font-family: rejouice;
+  src: url("Font/Rejouice-Headline.woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: rejouice;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#page1 {
+  width: 100%;
+  height: 100vh;
+  background-color: #dadada;
+  position: relative;
+}
+#page1 #cursor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8vw;
+  width: 8vw;
+  background-color: #ff5f38;
+  position: fixed;
+  z-index: 9;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.3 ease;
+}
+#page1 #cursor h5 {
+  opacity: 0.5;
+  font-family: NB;
+  font-size: 1.2vw;
+}
+#page1 video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+#page1 #page1-content {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 10;
+}
+nav {
+  color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vw 3vw;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+nav h3 {
+  font-weight: 100;
+  font-family: NB;
+}
+nav h4 {
+  font-weight: 100;
+  font-family: NB;
+  font-size: 18.9722px;
+}
+
+#page1-content h1 {
+  margin-right: 3vw;
+  font-size: 25vw;
+  letter-spacing: -2.2vw;
+  font-weight: 400;
+}
+#page1-content h1 span {
+  display: inline-block;
+}
+#page1-content h1 .capital {
+  font-size: 19vw;
+}
+#page2 {
+  width: 100%;
+  height: 100vh;
+}
+
+#page2 #page2-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1vw;
+  margin: 5vw 3vw 0 3vw;
+}
+#page2 #page2-top h3 {
+  font-size: 1.7vw;
+  font-weight: 100;
+  opacity: 0.8;
+  font-family: NB;
+}
+.elem {
+  overflow: hidden;
+}
+#page2 .elem p {
+  font-family: NB;
+  font-size: 59px;
+  margin: 1vw 3vw;
+  text-align: center;
+}
+#page3 {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 3vw;
+}
+#page3 #page3-top {
+  text-align: center;
+}
+#page3 #page3-top #top1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#page3 #page3-top h4,
+h2 {
+  font-family: NB;
+}
+#page3 #page3-top h4 {
+  font-size: 15.1778px;
+  font-weight: 500;
+}
+#page3 #page3-top h4 span {
+  background-color: black;
+  color: #fff;
+  font-size: 9.48611px;
+  border-radius: 20px;
+  padding: 0.3vw 0.4vw;
+}
+#page3 #page3-top h2 {
+  font-size: 58.8139px;
+  font-weight: 500;
+}
+#page3 #page3-elements {
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8vw;
+}
+#page3 #page3-elements .box {
+  height: 100%;
+  width: 33%;
+  position: relative;
+}
+#page3 #page3-elements .box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#page3 #page3-elements .box .img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all ease 0.3s;
+}
+#page3 #page3-elements .box:hover .img {
+  opacity: 0;
+}
+.img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-box img {
+  position: absolute;
+  top: 85%;
+  width: 15vw;
+  height: 3vw;
+}
+#page4 {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  z-index: 100;
+}
+
+#page4 #page4-top {
+  padding-bottom: 1vw;
+  margin: 5vw 3vw 0 3vw;
+}
+#page4 #page4-top h3 {
+  font-size: 1.7vw;
+  font-weight: 100;
+  opacity: 0.8;
+  font-family: NB;
+}
+#page4 #page4-top .top-left {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1vw;
+}
+#page4 #page4-top .top-left h3 {
+  font-size: 1.7vw;
+  font-weight: 100;
+  opacity: 0.8;
+  font-family: NB;
+}
+#page4 .elem p {
+  font-family: NB;
+  font-size: 59px;
+  margin: 1vw 3vw;
+  text-align: center;
+}
+#take-cursor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7vw;
+  width: 7vw;
+  background-color: black;
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+  z-index: 40;
+  transition: all 0.3 ease-in-out;
+  transform: translate(-50%, 180%);
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+#take-cursor h5 {
+  font-weight: 100;
+  color: #fff;
+}
+#video-cont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#page4 video {
+  width: 50%;
+}
+#video-cont svg {
+  position: absolute;
+  width: 30%;
+}
+#page5 {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+#page5 #page5-top {
+  margin: 5vw 3vw 0 3vw;
+}
+#page5 #page5-top .top-left {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1vw;
+}
+#page5 #page5-top .top-left h3 {
+  font-size: 1.7vw;
+  font-weight: 100;
+  opacity: 0.8;
+  font-family: NB;
+}
+#page5 .elem p {
+  font-family: NB;
+  font-size: 59px;
+  text-align: center;
+}
+#page5 #page5-bottom1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2vw 3vw;
+  margin-top: 10vw;
+  border-bottom: 1px solid #ccc;
+}
+#page5 #page5-bottom1 h1 {
+  font-size: 125px;
+  font-weight: 400;
+}
+#page5 #page5-bottom1 h3 {
+  font-size: 23px;
+  font-weight: 100;
+  font-family: NB;
+}
+#swiper-cont {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  margin-bottom: 2vw;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-top: -5%;
+}
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  transition-timing-function: var(
+    --swiper-wrapper-transition-timing-function,
+    initial
+  );
+  box-sizing: content-box;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.swiper-slide img {
+  width: 30%;
+  display: block;
+  object-fit: cover;
+}
+
+#page6 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: #ff5f38;
+}
+#loader {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 5px;
+  top: 0%;
+  z-index: 99;
+  background-color: black;
+  color: #ffff;
+}
+#loader h2 {
+  font-family: NB;
+}
